@@ -1,1 +1,388 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: Now-Regular;
+    src: url(assets/fonts/Now-Regular.otf) format("opentype");
+  }
+
+  @font-face {
+    font-family: Now-Bold;
+    src: url(assets/fonts/Now-Bold.otf) format("opentype");
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Now-regular, "Helvetica Neue", sans-serif; }
+.fixed-top {
+    position: inherit;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.bg-dark {
+    background-color: #4754a4!important;
+}
+
+.navbar-brand img{
+    width:152px;   
+}
+
+.navbar {
+    padding: 25px 47px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #5f6caf;
+    border-color: #5f6caf;
+    padding: 10px 24px;
+    font-size: 14px;
+}
+
+.nav-link {
+    color: #fff;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 3.5rem;
+    font-size: 15px;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+
+}
+
+.fa-2x {
+    font-size: 24px;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(219 219 219);
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #5f6caf;
+    border-color: #5f6caf; /*set the color you want here*/
+}
+
+.nav-link:focus, .nav-link:hover {
+    text-decoration: none;
+    color:#fff;
+}
+
+.text-muted {
+    color: #ffffffbd!important;
+    background-color: #4653a4;
+}
+
+.footer-header{
+    color:#f5a623;
+    font-family: Now-Bold;
+}
+
+.footer-list li a{
+    font-size: 12px;
+    text-decoration: none;
+}
+
+
+.dropdown-menu{
+    border-radius: 10px;
+}
+.dropdown-menu > a:hover {
+    background-color:#fff; 
+    color:#f5a623;
+    font-weight: bold;
+    font-size: 17px;
+}
+.dropdown-menu {
+    left: 54px;
+}
+.jumbotron {
+ 
+    background-color: #4653a4;
+}
+.banner-title{
+    color: #fff;
+    text-align: left;
+    /* font-weight: bold; */
+    font-family: Now-Bold;
+    font-size: 36px;
+    /* inline-size: 11px; */
+    line-height: 59px;
+    padding-top: 82px;
+}
+.banner-title-about{
+    color: #fff;
+    text-align: left;
+    /* font-weight: bold; */
+    font-family: Now-Bold;
+    font-size: 36px;
+    /* inline-size: 11px; */
+    line-height: 59px;
+    
+}
+.banner-title-about-top{
+     padding-top: 90px;
+    color: #4a90e2;
+    font-family: Now-Bold;
+    text-align: left;
+    font-size: 21px;
+}
+.para-text{
+    color: #f5a623;
+    text-align: left;
+    font-size: 22px;
+}
+
+.link-button{
+    color: #fff;
+    font-size: 25px;
+    text-align: left;
+}
+.link-button a, .link-button a:hover{
+text-decoration: none;
+color:#fff;
+}
+.icon-color{
+    color: #eec775;
+    font-size: 19px;
+}
+
+.icon-color-white{
+    color: #fff;
+    font-size: 19px;
+}
+
+.jumbotron{
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.jumbotron-about{
+ background-color: #353f7f;
+}
+.container-fluid{
+    padding: 0;
+}
+  /* animation */
+
+  .waves {
+    position: relative;
+    width: 100%;
+    height: 23vh;
+    margin-bottom: 0;
+    min-height: 100px;
+    max-height: 150px;
+    top: 0;
+  }
+  .content {
+    position: relative;
+    height: 20vh;
+    text-align: center;
+    background-color: white;
+  }
+  /* Animation */
+  .parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+  }
+  .parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+      transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+      transform: translate3d(85px, 0, 0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height: 40px;
+      min-height: 40px;
+    }
+    .content {
+      height: 30vh;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    .jumbotron {
+      padding: 0;
+  }
+    
+  }
+
+  @media (min-width: 576px){
+    .jumbotron {
+        padding: 0;
+    }
+}
+
+
+.centered1 {
+  position: absolute;
+  top: 50%;
+  left: 34%;
+  transform: translate(-50%, -50%);
+  color:#9599a8;
+  font-size: 19px;
+}
+.centered2 {
+  position: absolute;
+  top: 50%;
+  left: 27%;
+  transform: translate(-50%, -50%);
+  color:#9599a8;
+  font-size: 19px;
+}
+.centered3 {
+  position: absolute;
+  top: 50%;
+  left: 26%;
+  transform: translate(-50%, -50%);
+  color:#9599a8;
+  font-size: 19px;
+}
+
+.thumb-title{
+  font-family: Now-Bold;
+}
+
+.btn-outline-primary {
+  color: #253167;
+  border-color: #253167;
+  font-size: 12px;
+  padding: 8px 19px;
+}
+
+.card-title{
+  font-family: Now-Bold;
+}
+
+.price{
+  color: #f5a623;
+    font-size: 22px;
+    font-family: 'Now-Bold';
+    text-decoration: none;
+}
+.about-content{
+  margin-top:150px;
+}
+.featurette-heading{
+ font-family: Now-Bold;
+ color: #253167;
+}
+
+.bg-light {
+    background-color: #e8eef6!important;
+    padding-top: 30px;
+
+}
+.bg-thick {
+    background-color: #f5a623!important;
+}
+
+hr.style1 {
+    border-top: 1px solid #8c8b8b;
+    padding: 0;
+    margin: 0 auto;
+    width: 55%;
+}
+
+.btn-primary{
+  border-radius: 0;
+    padding: 16px;
+}
+.button-style-1{
+  font-size: 16px;
+    color: #5f6caf;
+    border-radius: 17px;
+    font-weight: bold;
+    padding: 10px 29px;
+}
+.count-learning{
+     padding: 91px 24px;
+}
+.count-heading{
+      font-size: 60px;
+    font-family: Now-Bold;
+    color: #253167;
+}
+
+.count-title{
+  color:#fff;
+}
+
+.count-title {
+    color: #fff;
+    font-size: 19px;
+}
+
+.col-margin{
+  margin-left:30px;
+  margin-right:30px;
+}
+
+.bg-none{
+  background: none;
+  border:none;
+}
+
+.bgimage{
+   background-image: url("./assets/images/bg.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 60px;
+}
+
+.headmargin{
+    margin: 29px 17px;
+    color:#727272
+}
+
+.para-about-text{
+      color: #c0bfbf;
+    text-align: left;
+    font-size: 18px;
+}
+
+.about-heading{
+        font-family: Now-Bold;
+    color: #253167;
+    font-size: 40px;
+}
+
+.para-about{
+      font-size: 16px;
+}
+
+.padding-top{
+ padding-top: 50px;
+}
+
+.marketing{
+  padding-top:50px; 
+ 
+}
+.team-name-title{
+   font-family: Now-Bold;
+    font-size: 25px;
+    padding-top: 16px;
+}
+

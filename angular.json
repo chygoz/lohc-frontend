@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "lohc-frontend": {
+    "lahc-frontend": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/lohc-frontend",
+            "outputPath": "dist/lahc-frontend",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,9 +28,16 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/font-awesome/css/font-awesome.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery-1.11.1.min.js",
+              "node_modules/jquery/dist/jquery.slim.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -66,18 +73,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "lohc-frontend:build"
+            "browserTarget": "lahc-frontend:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "lohc-frontend:build:production"
+              "browserTarget": "lahc-frontend:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "lohc-frontend:build"
+            "browserTarget": "lahc-frontend:build"
           }
         },
         "test": {
@@ -114,15 +121,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "lohc-frontend:serve"
+            "devServerTarget": "lahc-frontend:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "lohc-frontend:serve:production"
+              "devServerTarget": "lahc-frontend:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "lohc-frontend"
+    }
+  },
+  "defaultProject": "lahc-frontend"
 }
