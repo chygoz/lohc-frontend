@@ -11,6 +11,7 @@ import { CareersComponent } from './careers/careers.component';
 import { JobApplyFormComponent } from './job-apply-form/job-apply-form.component';
 import { AboutComponent } from './about/about.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

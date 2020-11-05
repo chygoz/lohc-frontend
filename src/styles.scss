@@ -18,7 +18,7 @@ body { margin: 0; font-family: Now-regular, "Helvetica Neue", sans-serif; }
     left: 0;
     z-index: 1030;
 }
-.bg-dark {
+.bg-blue {
     background-color: #4754a4!important;
 }
 
@@ -27,13 +27,13 @@ body { margin: 0; font-family: Now-regular, "Helvetica Neue", sans-serif; }
 }
 
 .navbar {
-    padding: 25px 47px;
+    padding: 25px 47px !important;
 }
 
 .btn-primary {
     color: #fff;
-    background-color: #5f6caf;
-    border-color: #5f6caf;
+    background-color: #5f6caf !important;
+    border-color: #5f6caf !important;
     padding: 10px 24px;
     font-size: 14px;
 }
@@ -100,7 +100,9 @@ body { margin: 0; font-family: Now-regular, "Helvetica Neue", sans-serif; }
 }
 .jumbotron {
  
-    background-color: #4653a4;
+    background-color: #4653a4 !important;
+    margin-bottom: 0rem !important;
+        padding: 38px 0 0 0 !important;
 }
 .banner-title{
     color: #fff;
@@ -110,7 +112,7 @@ body { margin: 0; font-family: Now-regular, "Helvetica Neue", sans-serif; }
     font-size: 36px;
     /* inline-size: 11px; */
     line-height: 59px;
-    padding-top: 82px;
+ padding-top: 54px;
 }
 .banner-title-about{
     color: #fff;
@@ -261,6 +263,18 @@ color:#fff;
 
 .thumb-title{
   font-family: Now-Bold;
+  color: #253167;
+}
+
+.thumb-title-home{
+  font-family: Now-Bold;
+  color: #4754a4;
+  padding-top: 50px;
+}
+.text-color{
+  color: #4754a4;
+  padding-top:50px;
+  
 }
 
 .btn-outline-primary {
@@ -290,7 +304,7 @@ color:#fff;
 
 .bg-light {
     background-color: #e8eef6!important;
-    padding-top: 30px;
+   padding-top: 5px;
 
 }
 .bg-thick {
@@ -385,4 +399,95 @@ hr.style1 {
     font-size: 25px;
     padding-top: 16px;
 }
+.team-name-title-tab{
+  font-size: 21px;
+    padding-top: 16px;
+    font-weight: bold;
+}
+.input-field,.input-field:focus{
+  width: 92%;
+    border: none;
+        padding: 9px 25px;
+         outline: none;
+}
+.searchicon{
+  font-size: 20px;
+    color: #727272;
+}
+.careerbtn{
+  padding: 9px 24px;
+    border-radius: 6px;
+}
 
+.accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f106";
+    float: right; 
+    color: #f5a623;
+    font-size: 40px;
+    font-weight: normal;
+}
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f078"; 
+    color: #f5a623;
+    font-size: 21px;
+    font-weight: normal;
+}
+
+.card.mb-0{
+  background-color: #e8eef6;
+    border: none;
+}
+
+.card-header{
+  background:none;
+}
+.card-title{
+      font-size: 20px;
+    color: #253167 !important;
+}
+.collapse ul li{
+  list-style: none !important;
+}
+.job-title{
+    font-weight: bold;
+    margin: 0;
+}
+.job-title-sub{
+font-size: 13px;
+}
+.card-header {
+    padding: 1.75rem 1.25rem !important;
+}
+
+/* client logos*/
+
+#clients {
+     padding: 60px 0
+ }
+
+ #clients .clients-wrap {
+   
+     margin-bottom: 30px
+ }
+
+ #clients .client-logo {
+   padding: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-right: 1px solid #d6eaff; */
+    /* border-bottom: 1px solid #d6eaff; */
+    overflow: hidden;
+    /* background: #fff; */
+
+ }
+
+ #clients img {
+     transition: all 0.4s ease-in-out
+ }
+
+ .fa-angle-down{
+   vertical-align: bottom;
+ }
