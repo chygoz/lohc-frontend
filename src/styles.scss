@@ -73,6 +73,7 @@ body { margin: 0; font-family: Now-regular, "Helvetica Neue", sans-serif; }
 .text-muted {
     color: #ffffffbd!important;
     background-color: #4653a4;
+
 }
 
 .footer-header{
@@ -81,7 +82,7 @@ body { margin: 0; font-family: Now-regular, "Helvetica Neue", sans-serif; }
 }
 
 .footer-list li a{
-    font-size: 12px;
+    font-size: 15px;
     text-decoration: none;
 }
 
@@ -109,7 +110,7 @@ body { margin: 0; font-family: Now-regular, "Helvetica Neue", sans-serif; }
     text-align: left;
     /* font-weight: bold; */
     font-family: Now-Bold;
-    font-size: 36px;
+    font-size: 34px;
     /* inline-size: 11px; */
     line-height: 59px;
  padding-top: 54px;
@@ -119,7 +120,7 @@ body { margin: 0; font-family: Now-regular, "Helvetica Neue", sans-serif; }
     text-align: left;
     /* font-weight: bold; */
     font-family: Now-Bold;
-    font-size: 36px;
+    font-size: 34px;
     /* inline-size: 11px; */
     line-height: 59px;
     
@@ -129,7 +130,7 @@ body { margin: 0; font-family: Now-regular, "Helvetica Neue", sans-serif; }
     color: #4a90e2;
     font-family: Now-Bold;
     text-align: left;
-    font-size: 21px;
+    font-size: 16px;
 }
 .para-text{
     color: #f5a623;
@@ -139,7 +140,7 @@ body { margin: 0; font-family: Now-regular, "Helvetica Neue", sans-serif; }
 
 .link-button{
     color: #fff;
-    font-size: 25px;
+    font-size: 19px;
     text-align: left;
 }
 .link-button a, .link-button a:hover{
@@ -325,12 +326,12 @@ hr.style1 {
 .button-style-1{
   font-size: 16px;
     color: #5f6caf;
-    border-radius: 17px;
+    border-radius: 9px;
     font-weight: bold;
     padding: 10px 29px;
 }
 .count-learning{
-     padding: 91px 24px;
+     padding: 124px 24px;
 }
 .count-heading{
       font-size: 60px;
@@ -366,7 +367,7 @@ hr.style1 {
 }
 
 .headmargin{
-    margin: 29px 17px;
+    margin: 150px 0 55px 17px;
     color:#727272
 }
 
@@ -379,7 +380,7 @@ hr.style1 {
 .about-heading{
         font-family: Now-Bold;
     color: #253167;
-    font-size: 40px;
+    font-size: 34px;
 }
 
 .para-about{
@@ -396,18 +397,19 @@ hr.style1 {
 }
 .team-name-title{
    font-family: Now-Bold;
-    font-size: 25px;
+    font-size: 24px;
     padding-top: 16px;
 }
 .team-name-title-tab{
-  font-size: 21px;
+ font-size: 22px;
     padding-top: 16px;
     font-weight: bold;
+    color: #253167;
 }
 .input-field,.input-field:focus{
-  width: 92%;
+  width: 88%;
     border: none;
-        padding: 9px 25px;
+        padding: 9px 26px;
          outline: none;
 }
 .searchicon{
@@ -429,9 +431,9 @@ hr.style1 {
 }
 .accordion .card-header.collapsed:after {
     /* symbol for "collapsed" panels */
-    content: "\f078"; 
+    content: "\f107";
     color: #f5a623;
-    font-size: 21px;
+    font-size: 40px;
     font-weight: normal;
 }
 
@@ -444,18 +446,23 @@ hr.style1 {
   background:none;
 }
 .card-title{
-      font-size: 20px;
-    color: #253167 !important;
+  font-size: 26px;
+  color: #253167 !important;
+  top: 16px;
 }
 .collapse ul li{
   list-style: none !important;
+  padding: 18px 0;
 }
 .job-title{
     font-weight: bold;
     margin: 0;
+    font-size: 20px;
 }
 .job-title-sub{
-font-size: 13px;
+font-size: 16px;
+    color: #727272;
+    padding-top: 11px;
 }
 .card-header {
     padding: 1.75rem 1.25rem !important;
@@ -464,7 +471,7 @@ font-size: 13px;
 /* client logos*/
 
 #clients {
-     padding: 60px 0
+    padding: 60px 0 80px 0;
  }
 
  #clients .clients-wrap {
@@ -491,3 +498,25 @@ font-size: 13px;
  .fa-angle-down{
    vertical-align: bottom;
  }
+
+ .lead {
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 23px;
+}
+
+.footer-text-m{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-list li{
+   margin-bottom: 10px;
+}
+
+.team-img{
+  width: 200px;
+}
+.card-header{
+padding: 8px !important;
+}
