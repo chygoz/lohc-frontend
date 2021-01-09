@@ -13,12 +13,12 @@
                     </p>
                 </div>
                 <div class="col-md-6">
-                    <img src="./assets/images/slider_image.png" class="img-fluid float-right" />
+                    <img src="./assets/images/undraw_team_spirit_hrr4.svg" class="img-fluid float-right" />
                 </div>
             </div>
         </div>
     </section>
-    <div class="row bg-light">
+    <div class="row bg-light m-0 p-0 ">
         <div class="col-sm-10 mx-auto">
             <div class="row text-center mt-n5">
 
@@ -26,9 +26,9 @@
                     <div class="card h-100 shadow">
                         <div class="card-body">
                             <div class="col-md-5 float-left"> 
-                              <img src="./assets/images/search.svg" style="width:30px">
+                                <img src="./assets/images/search.svg" style="width:30px">
                                 <input class="input-field" type="text" 
-                                placeholder="Job title or keyword" name="usrnm">
+                                       placeholder="Job title or keyword" name="usrnm">
                                 |
                             </div>
                             <div class="col-md-5 float-left"> 
@@ -53,19 +53,21 @@
 
     <div class="album py-5 bg-light">
         <div class="container">
-
+            <div class="row">
+                <div class="col-md-12 border-bottom-1">
+                   <h2 class="mt-4 mb-4 thumb-title text-left ">Latest Posting by Categories</h2>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="container">
                         <div id="accordion" class="accordion">
                             <div class="card mb-0">
                                 <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
-                                    <a class="card-title" style="position: relative;"> Latest Posting by Categories </a>
+                                    <a class="card-title" style="position: relative;"> Grade 1 - 5 Teacher </a>
                                 </div>
                                 <div id="collapseOne" class="card-body collapse" data-parent="#accordion">
-
-                                    <h2 class="team-name-title-tab">Grade 1 - 5 Teacher</h2>
-                                    <ul>
+                                      <ul>
                                         <li>
                                             <p class="job-title">Physics, Chemistry</p>
                                             <p class="job-title-sub">Any Country</p>
@@ -79,16 +81,15 @@
                                             <p class="job-title-sub">UK, Nigeria, USA, India, France</p>
                                         </li>
                                         <li>
-                                            <button type="button" class="btn btn-primary careerbtn">Apply Here</button>  
+                                            <a type="button" class="btn btn-primary careerbtn" routerLink="/teachers-application">Apply Here</a>  
                                         </li>
                                     </ul>
 
                                 </div>
                                 <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                    <a class="card-title" style="position: relative;"> Grade 7 - 12 </a>
+                                    <a class="card-title" style="position: relative;">Grade 7 - 12 Teacher</a>
                                 </div>
                                 <div id="collapseTwo" class="card-body collapse" data-parent="#accordion">
-                                    <h2 class="team-name-title-tab">Grade 7 - 12 Teacher</h2>
                                     <ul>
                                         <li>
                                             <p class="job-title">Physics, Chemistry</p>
@@ -103,16 +104,14 @@
                                             <p class="job-title-sub">UK, Nigeria, USA, India, France</p>
                                         </li>
                                         <li>
-                                            <button type="button" class="btn btn-primary careerbtn">Apply Here</button>  
+                                            <a class="btn btn-primary careerbtn" routerLink="/teachers-application">Apply Here</a>  
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                                    <a class="card-title" style="position: relative;"> Adminstrative </a>
+                                    <a class="card-title team-name-title-tab" style="position: relative;"> Adminstrative </a>
                                 </div>
                                 <div id="collapseThree" class="collapse" data-parent="#accordion">
-
-                                    <h2 class="team-name-title-tab">Adminstrative</h2>
                                     <ul>
                                         <li>
                                             <p class="job-title">Physics, Chemistry</p>
@@ -127,18 +126,16 @@
                                             <p class="job-title-sub">UK, Nigeria, USA, India, France</p>
                                         </li>
                                         <li>
-                                            <button type="button" class="btn btn-primary careerbtn">Apply Here</button>  
+                                            <a class="btn btn-primary careerbtn" routerLink="/teachers-application">Apply Here</a>  
                                         </li>
                                     </ul>
 
                                 </div>
                                 <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsefour">
-                                    <a class="card-title" style="position: relative;"> Manageral </a>
+                                    <a class="card-title team-name-title-tab" style="position: relative;"> Manageral </a>
                                 </div>
                                 <div id="collapsefour" class="collapse" data-parent="#accordion">
-
-                                    <h2 class="team-name-title-tab">Manageral</h2>
-                                    <ul>
+                                <ul>
                                         <li>
                                             <p class="job-title">Physics, Chemistry</p>
                                             <p class="job-title-sub">Any Country</p>
@@ -152,7 +149,7 @@
                                             <p class="job-title-sub">UK, Nigeria, USA, India, France</p>
                                         </li>
                                         <li>
-                                            <button type="button" class="btn btn-primary careerbtn">Apply Here</button>  
+                                            <a class="btn btn-primary careerbtn" routerLink="/teachers-application">Apply Here</a>  
                                         </li>
                                     </ul>
                                 </div>
@@ -175,7 +172,7 @@
                                             <p class="job-title-sub">UK, Nigeria, USA, India, France</p>
                                         </li>
                                         <li>
-                                            <button type="button" class="btn btn-primary careerbtn">Apply Here</button>  
+                                            <a class="btn btn-primary careerbtn" href="/teachers-application">Apply Here</a>  
                                         </li>
                                     </ul>
                                 </div>
@@ -188,9 +185,100 @@
         </div>
     </div>
 
+    <div class="album bg-light pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                   <h2 class="mt-4 mb-4 thumb-title text-center">We made easy for just anyone</h2>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <owl-carousel-o [options]="customOptions">
+
+                        <ng-template carouselSlide>
+                            <div class="shadow-sm m-4 d-flex align-items-end">
+                                 <div class="col-md-6  p-0">
+                                <div class="author-img"> 
+                                    <img src="./assets/images/team7.jpg" class="img-fluid imgwidthcareer"> 
+                                </div>
+                                </div>
+                                  <div class="col-md-6 p-0">
+                                <div class="p-5 bg-white">
+                                    <p class="testi-text pb-4 text-left">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                        nisi ut aliquip ex ea commodo consequat. 
+                                    </p>
+                                 <div class="pt-3 text-left">
+                                        <h6 class="mb-2 font-weight-bold">Priscilla Mckinney</h6>
+                                        <p class="m-0 small font-medium">Illustrator</p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </ng-template>  
+                        <ng-template carouselSlide>
+                           <div class="shadow-sm m-4 d-flex align-items-end">
+                                 <div class="col-md-6  p-0">
+                                <div class="author-img"> 
+                                    <img src="./assets/images/team7.jpg" class="img-fluid imgwidthcareer"> 
+                                </div>
+                                </div>
+                                  <div class="col-md-6 p-0">
+                                <div class="p-5 bg-white">
+                                    <p class="testi-text pb-4 text-left">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                        nisi ut aliquip ex ea commodo consequat. 
+                                    </p>
+                                 <div class="pt-3 text-left">
+                                        <h6 class="mb-2 font-weight-bold">Priscilla Mckinney</h6>
+                                        <p class="m-0 small font-medium">Illustrator</p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </ng-template>  
+                        <ng-template carouselSlide>
+                            <div class="shadow-sm m-4 d-flex align-items-end">
+                                 <div class="col-md-6  p-0">
+                                <div class="author-img"> 
+                                    <img src="./assets/images/team7.jpg" class="img-fluid imgwidthcareer"> 
+                                </div>
+                                </div>
+                                  <div class="col-md-6 p-0">
+                                <div class="p-5 bg-white">
+                                    <p class="testi-text pb-4 text-left">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                        nisi ut aliquip ex ea commodo consequat. 
+                                    </p>
+                                 <div class="pt-3 text-left">
+                                        <h6 class="mb-2 font-weight-bold">Priscilla Mckinney</h6>
+                                        <p class="m-0 small font-medium">Illustrator</p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </ng-template> 
 
 
-   
+
+                    </owl-carousel-o>  
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
 
 
 

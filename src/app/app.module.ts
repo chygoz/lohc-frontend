@@ -10,7 +10,12 @@ import { FooterComponent } from './footer/footer.component';
 import { CareersComponent } from './careers/careers.component';
 import { JobApplyFormComponent } from './job-apply-form/job-apply-form.component';
 import { AboutComponent } from './about/about.component';
-
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { HttpClientModule } from '@angular/common/http';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { SignupComponent } from './signup/signup.component';
+import { TeachersApplicationComponent } from './teachers-application/teachers-application.component';
 
 @NgModule({
   declarations: [
@@ -20,14 +25,23 @@ import { AboutComponent } from './about/about.component';
     FooterComponent,
     CareersComponent,
     JobApplyFormComponent,
-    AboutComponent
+    AboutComponent,
+    SignupComponent,
+    TeachersApplicationComponent,
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    CarouselModule,
+    MatInputModule,
+    MatButtonModule
   ],
+  exports: [],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, HeaderComponent]
 })
 export class AppModule { }

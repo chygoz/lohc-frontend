@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
 @font-face {
     font-family: Now-Regular;
     src: url(assets/fonts/Now-Regular.otf) format("opentype");
@@ -140,9 +143,10 @@ body { margin: 0; font-family: Now-regular, "Helvetica Neue", sans-serif; }
 
 .link-button{
     color: #fff;
-    font-size: 19px;
+    font-size: 16px;
     text-align: left;
 }
+
 .link-button a, .link-button a:hover{
 text-decoration: none;
 color:#fff;
@@ -272,10 +276,24 @@ color:#fff;
   color: #4754a4;
   padding-top: 50px;
 }
+
+.thumb-title-signup{
+  font-family: Now-Bold;
+  color: #4754a4;
+  padding-top: 20px;
+  font-size: 21px;
+}
+
 .text-color{
   color: #4754a4;
   padding-top:50px;
   
+}
+.text-color-signup{
+  color: #4754a4;
+  padding-top:10px;
+  padding-bottom:40px;
+  font-size: 14px;
 }
 
 .btn-outline-primary {
@@ -285,9 +303,7 @@ color:#fff;
   padding: 8px 19px;
 }
 
-.card-title{
-  font-family: Now-Bold;
-}
+
 
 .price{
   color: #f5a623;
@@ -324,7 +340,7 @@ hr.style1 {
     padding: 16px;
 }
 .button-style-1{
-  font-size: 16px;
+  font-size: 14px;
     color: #5f6caf;
     border-radius: 9px;
     font-weight: bold;
@@ -446,9 +462,10 @@ hr.style1 {
   background:none;
 }
 .card-title{
-  font-size: 26px;
-  color: #253167 !important;
-  top: 16px;
+  font-size: 21px;
+    color: #253167 !important;
+    top: 16px;
+    font-weight: bold;
 }
 .collapse ul li{
   list-style: none !important;
@@ -457,7 +474,8 @@ hr.style1 {
 .job-title{
     font-weight: bold;
     margin: 0;
-    font-size: 20px;
+       font-size: 18px;
+    color: #383838;
 }
 .job-title-sub{
 font-size: 16px;
@@ -500,7 +518,7 @@ font-size: 16px;
  }
 
  .lead {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     padding-top: 23px;
 }
@@ -520,3 +538,165 @@ font-size: 16px;
 .card-header{
 padding: 8px !important;
 }
+
+
+.testimonials{
+  padding-left: 60px;
+}
+.test-padding-top{
+  padding-top:149px;
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+   
+}
+
+.testi-desig{
+    padding-left: 20px;
+    padding-top: 16px;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 51px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #033a6f;
+}
+
+.imgwidthhome{
+  width:27% !important;
+}
+
+.imgwidthcareer{
+  width:100% !important;
+}
+
+.shadow-sm {
+    box-shadow: none !important;
+}
+.border-bottom-1{
+  border-bottom: 2px solid #727272;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #5f6caf;
+    border-color: #5f6caf;
+}
+.modal-content{
+  background-image: url("./assets/images/loginbg.jpg");
+  
+}
+
+button:focus { outline: none; }
+.login-title{
+      font-family: 'Now-Bold';
+    font-size: 21px;
+    padding-top: 50px;
+}
+
+@media (min-width: 576px){
+  .modal-dialog {
+    max-width: 659px;
+  }
+}
+
+.form-control-login {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: #707070;
+  background: none;
+  width: 100%;
+  font-size: 12px;
+  padding: 8px;
+}
+.form-control-login:focus {
+  border-color: green
+}
+.loginbtn{
+  margin-top: 40px;
+      padding: 9px 12px;
+    border-radius: 20px;
+    width: 100%;
+}
+.googlebtn{
+  margin-top: 20px;
+      padding: 9px 12px;
+    border-radius: 20px;
+    width: 100%;
+}
+.googlebtn:hover{
+  background: none;
+  color:#4754a4;
+}
+.orbutton{
+      padding-top: 32px;
+    text-align: center;
+}
+.logo-dark{
+    padding-top: 28px;
+}
+
+.modal-body{
+    padding-bottom: 70px;
+}
+.form-control{
+  background-color: none;
+  border-color: #5f6caf;
+  border-radius: 0;
+        height: 44px;
+    margin-bottom: 9px;
+}
+.col-form-label{
+  color:#9599a8;
+font-size: 12px;
+}
+
+.form-check-label {
+    margin-bottom: 0;
+    color: #4754a4;
+    margin-left: 22px;
+}
+
+.card-header{
+  border-bottom: none;
+  border-top: 1px solid rgba(0,0,0,.125);
+}
+
+.owl-theme .owl-nav {
+   margin-top: -67px;
+ margin-left: 89px;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 9999;
+    position: relative;
+
+}
+.owl-theme .owl-nav [class*=owl-] {
+    color: #FFF;
+    font-size: 15px;
+    margin: 0px;
+    padding: 11px 13px;
+    background: #5f6caf;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+.owl-prev img,.owl-next img {
+      width: 20px;
+}
+
+.form-check-input {
+    margin-left: 0;
+}
+.form-check-label a{
+  text-decoration: none;
+  color: #29436a;
+  font-weight: bold;
+}
+input::placeholder{
+  font-size: 12px;
+}
+
